@@ -6,22 +6,22 @@
 
 body{
 
-    background-color: rgb(167, 170, 162);
+    background-color: rgb(121, 118, 118);
     font-family: Verdana, 'Times New Roman', Times, serif, Tahoma, sans-serif;
 }
 
 header.cabeceraPrincipal{
-    background-color: rgb(167, 105, 175);
+    width: 90%; 
+    background-color: rgb(167, 64, 64);
     color: #ffffff;
-    width: 60%;
     margin: 0 auto;
-    
-
 }
+
 header.cabeceraPrincipal img{
-    width: 30%;
+    max-width: 100%;
     display: inline-block;
-    scroll-padding-left: 1em;
+    padding: 1em 1em;
+    vertical-align: top;
 }
 header.cabeceraPrincipal h1{
     font-size: 2em;
@@ -30,42 +30,179 @@ header.cabeceraPrincipal h1{
     display: inline-block;
     text-shadow: rgb(0, 0, 0) 3px 3px 3px;
 }
-section.sliderprincipal{
-    
-    background-color:  rgb(55, 170, 199);
-    font-size: 3em;
-    padding: 2em;
-}
-nav{
+
+main{
+    width: 90%;
     margin: 0 auto;
-    width: 100%;
+    background-color: rgb(224, 218, 218);
+}
+main section.contenedor{
+    padding: 1em;
+}
+
+nav.menuprincipal{
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(32, 30, 30);
+    text-align: center;
+    padding: 1em 0;
 }
 nav a{
+    font-size: 1.5em;
+    color: #ffffff;
+    padding: 0.6em 3em;
+    text-decoration: none;
+}
+nav.menuprincipal a:hover{
+    background-color: #ffffff;
+    color: rgb(32, 30, 30);
+}
+
+section.sliderprincipal{
+    background-color:   rgba(97, 94, 94, 0);
+    color: #ffffff;
     font-size: 2em;
-    padding: 3em;
-    width: 80%;
-    text-shadow: rgb(0, 0, 0) 2px 2px 1px;
-}
-section#servicios{
-    background-color:  rgb(55, 170, 199);
+    padding: 1em 1em;
+    width: 100%;
     margin: 0 auto;
-    width: 80%;
 }
-section#informacion{
-    background-color: rgba(28, 150, 180, 0);
+section.servicios, section.servicios1{
+    background-color: rgb(167, 64, 64);
     margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+.servicios article.tema, .servicios1 article.tema{
+    width: 30%;
+    display: inline-block;
+}
+.servicios article.tema h3, .servicios1 article.tema h3{
     font-size: 2em;
-    padding: 5em;
+    color: #ffffff;
+    padding: 1em 0 0 0;
+    text-shadow: rgb(0, 0, 0) 3px 3px 3px;
 }
+.servicios article.tema p, .servicios1 article.tema p{
+    text-align: justify;
+    padding: 1em 2em;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+}
+
+
+section.informacion{
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    
+}
+section.informacion img{
+
+}
+section.informacion h3{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 2em;
+    width: 30%;
+
+}
+
 aside{
-    background-color: rgb(55, 170, 199);
-    font-size: 3em;
-    padding: 2em;
-    width: 80%;
-    margin: 0 auto;
-}
-footer.final{
+    background-color: rgb(57, 131, 150);
     font-size: 2em;
-    padding: 5em;
-    background-color: rgb(167, 105, 175);
+    width: 90%;
+    margin: 0 auto;
+    padding: 5em 0;
+     
+}
+footer.piepagina{
+    width: 100%;
+    font-size: 1em;
+    padding: 5em 0;
+    background-color: rgb(32, 30, 30);
+    color: #ffffff;
+}
+
+
+@media only screen and(max-width: 750px){
+    body{
+        background-color: #ffffff;
+    }
+
+    header.cabeceraPrincipal{
+        width: 100%; 
+        margin: 0 auto;
+    }
+    
+    header.cabeceraPrincipal img{
+        max-width: 100%;
+        display: inline-block;
+        padding: 0.5em 0.5em;
+        vertical-align: top;
+    }
+    header.cabeceraPrincipal h1{
+        font-size: 1em;
+        padding: 1em;
+        width: 60%;
+        display: inline-block;
+        text-shadow: rgb(0, 0, 0) 3px 3px 3px;
+    }
+
+    nav.menuprincipal{
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgb(32, 30, 30);
+        text-align: center;
+        padding: 1em 0;
+    }
+    nav a{
+        font-size: 1em;
+        color: #ffffff;
+        padding: 0.5em 0.5em;
+        text-decoration: none;
+    }
+    nav.menuprincipal a:hover{
+        background-color: #ffffff;
+        color: rgb(32, 30, 30);
+    }
+}
+
+@media only screen and(max-width: 550px){
+    body{
+        background-color: #ffffff;
+    }
+
+    header.cabeceraPrincipal{
+        width: 100%; 
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    header.cabeceraPrincipal img{
+        max-width: 100%;
+        display: block;
+        padding: 0.5em 0.5em;
+    }
+    header.cabeceraPrincipal h1{
+        font-size: 1em;
+        padding: 1em;
+        width: 100%;
+        display: block;
+        text-shadow: rgb(0, 0, 0) 3px 3px 3px;
+    }
+
+    nav.menuprincipal{
+        width: 100px;
+    }
+    nav a{
+        padding: 6px 30px;
+        display: block;
+        background-color:  rgb(32, 30, 30);
+    }
+    .servicios article.tema, .servicios1 article.tema{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    } 
 }
